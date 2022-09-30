@@ -32,8 +32,8 @@ html {
     background-image: url('https://i.pinimg.com/originals/23/0c/68/230c68295a086b46a3bd01d03bef7719.gif');
     background-repeat: no-repeat;
     background-size:cover;
-    background-position: 48% 40%;
-    gap: 130px;
+    background-position: 48% 30%;
+    gap: 240px;
     display: flex;
     flex-direction: column;
 }
@@ -87,6 +87,9 @@ img {
     
 }
 
+.pokemon-details {
+    padding-bottom: 32px;
+}
 
 .pokemon-item {
     width: 100%;
@@ -154,21 +157,16 @@ select {
 }
 
 body {
-    border: 40px solid rgb(220, 64, 12);
+    border: 42px solid rgb(220, 64, 12);
     border-style: groove;
-    max-width: 80%;
+    max-width: 1500px;
     margin: 0 auto;
-    min-height: 500px;
-    max-height: 50%;
-    /* background-image: url(''); */
-    /* background-repeat: no-repeat; */
-    /* background-position: cover; */
+    height: 850px;
 }
 
 .blink {
     animation: blink-animation 0.8s steps(5, start) infinite;
     -webkit-animation: blink-animation 0.8s steps(5, start) infinite;
-    /* margin-top: -100px; */
   }
   @keyframes blink-animation {
     to {

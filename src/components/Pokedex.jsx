@@ -32,20 +32,19 @@ const Pokedex = () => {
 
     const searchType = (typeUrl) => {
         axios.get(typeUrl)
-            .then(res => setPokemonList(res.data.pokemon.map(pokemon => pokemon.pokemon))) //hacemos el map aqui para evitar hacer la condiconal de la linea 73, convirtiendose asi pokemonList a la misma estructura del setPokemonList del useEffect
+            .then(res => setPokemonList(res.data.pokemon.map(pokemon => pokemon.pokemon))) 
     }
 
-    //paginacion para ver 5 pokemon por pag.
+    //paginacion para ver 10 pokemon por pag.
     const [ page, setPage ] = useState(1);
-    const pokemonPerPage = 10;
+    const pokemonPerPage = 8;
     const lastPokemonIndex = page * pokemonPerPage; 
     const firstPokemonIndex = lastPokemonIndex - pokemonPerPage;
 
 
     const pokemonPaginated = pokemonList.slice(firstPokemonIndex, lastPokemonIndex)
     
-    //para sacar la ultima pagina hacemos, debmos calcular cuantas paginas habrá. CEIL redondea hacia arriba
-
+ 
     const totalPages = Math.ceil(pokemonList.length / pokemonPerPage)
     const pagesNumber = [];
     for (let i = 1; i <= totalPages; i++) {
