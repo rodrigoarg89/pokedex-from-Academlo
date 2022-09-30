@@ -32,7 +32,7 @@ html {
     background-image: url('https://i.pinimg.com/originals/23/0c/68/230c68295a086b46a3bd01d03bef7719.gif');
     background-repeat: no-repeat;
     background-size:cover;
-    background-position: 48% 30%;
+    background-position: 50% 30%;
     gap: 240px;
     display: flex;
     flex-direction: column;
@@ -45,7 +45,7 @@ img {
 
 .input-poke, .input-log {
     border-radius: 20px;
-    padding: 10px 15px;
+    padding: 11px 15px;
     width: 25%;
 }
 
