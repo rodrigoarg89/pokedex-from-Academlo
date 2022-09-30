@@ -1,0 +1,182 @@
+html {
+    font-family: 'Kanit', sans-serif;
+}
+
+
+.App {
+    margin: 0 auto;
+    /* padding-top: 20px; */
+    text-align: center;
+}
+
+
+.div-container {
+    padding-top: 10%;
+  }
+  
+.welcome {
+    font-style: initial;
+}
+
+.pokemons-container {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+    margin: 0 10%;
+    padding-top: 0;
+    border-radius: 5px;
+    margin-top: 30px ;
+  } 
+
+.login {
+    background-image: url('https://i.pinimg.com/originals/23/0c/68/230c68295a086b46a3bd01d03bef7719.gif');
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: 48% 40%;
+    gap: 130px;
+    display: flex;
+    flex-direction: column;
+}
+
+img {
+    max-height: 100px;
+    margin: 0 auto;
+}
+
+.input-poke, .input-log {
+    border-radius: 20px;
+    padding: 10px 15px;
+    width: 25%;
+}
+
+.input-log {
+    margin-left: -10px;
+}
+
+.poke-logo {
+    margin-top: -120px;
+    margin-left: -17px;
+    /* margin: 0 auto; */
+}
+
+.btn-log,.btn-poke {
+    margin-left: -35px;
+    margin-top: -10px;
+    border-radius: 20px;
+    border-style: none;
+    padding: 5px 7px;
+    color: green;
+}
+
+.btn-log {
+    background-color: white;
+}
+
+.fa-right-from-bracket {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 30px;
+    margin-right: 30px;
+}
+
+.pokemon-details, .pokemon-item {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto ;
+    font-size: 20px;
+    
+}
+
+
+.pokemon-item {
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+.pokemon-item:hover {
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.9);
+    cursor: pointer;
+}
+
+
+.let-capital {
+    text-transform: lowercase;
+    }
+
+.let-capital:first-letter {
+    text-transform: uppercase;
+}
+
+
+select {
+    margin-left: 5%;
+    border-radius: 20px;
+    padding: 10px 30px;
+    width: 30%;
+}
+
+.paginator {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 20px;
+}
+
+.btn-paginator {
+    border-radius: 45px;
+    padding: 5px 10px;
+}
+
+.btn-paginator:active {
+    border-radius: 45px;
+    padding: 5px 10px;
+    background-color: greenyellow;
+}
+
+.card-image {
+    min-height: 400px;
+}
+
+.flex-details {
+    display: flex;
+    justify-content:center;
+}
+
+.card-type {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    margin: 0 auto;
+    gap: 5px;
+}
+
+.card {
+    padding: 50px;
+}
+
+body {
+    border: 40px solid rgb(220, 64, 12);
+    border-style: groove;
+    max-width: 80%;
+    margin: 0 auto;
+    min-height: 500px;
+    max-height: 50%;
+    /* background-image: url(''); */
+    /* background-repeat: no-repeat; */
+    /* background-position: cover; */
+}
+
+.blink {
+    animation: blink-animation 0.8s steps(5, start) infinite;
+    -webkit-animation: blink-animation 0.8s steps(5, start) infinite;
+    /* margin-top: -100px; */
+  }
+  @keyframes blink-animation {
+    to {
+      visibility: hidden;
+    }
+  }
+  @-webkit-keyframes blink-animation {
+    to {
+      visibility: hidden;
+    }
+  }
