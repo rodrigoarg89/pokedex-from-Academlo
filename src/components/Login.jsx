@@ -22,8 +22,9 @@ const Login = () => {
             <div className='poke-port'>
                 {/* <img src="https://i.pinimg.com/originals/23/0c/68/230c68295a086b46a3bd01d03bef7719.gif" alt="" /> */}
             </div>
-            <div >
-                <img className='poke-logo'src="http://i.imgur.com/iPvcyJv.png" alt="logo" />
+            <div className='pokedex'>
+                <img className='poke-logo'src="https://1.bp.blogspot.com/-0V4itR_v87M/UtsCF-ehNYI/AAAAAAAABjU/UEQ5Jiy_85o/s1600/pokedex-3d-logo.png" alt="logo" />
+
             </div>
 
             <div className='input-initial'>
@@ -32,7 +33,7 @@ const Login = () => {
                     type="text"
                     value={userName}
                     onChange={e => setUserName(e.target.value)} />
-                <button className='btn-log' onClick={dispatchUserName}><i class="fa-solid fa-paper-plane"></i></button>
+                <button className='btn-log' onClick={dispatchUserName}><i className="fa-solid fa-paper-plane"></i></button>
 
             </div>
             <div className='title'>
