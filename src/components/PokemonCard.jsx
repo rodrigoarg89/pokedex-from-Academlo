@@ -66,7 +66,7 @@ if(colorType == 'fire') {
             onClick={() => navigate(`/pokedex/${pokemon.id}`)} className='pokemon-item'>
 
             <h2 className='let-capital'>{pokemon.name}</h2>
-            <img src={pokemon.sprites?.other.dream_world.front_default} alt="" />
+            <img className='pokemon-img' src={pokemon.sprites?.other.dream_world.front_default} alt="" />
             <div className="card-type">Type:
                     { 
                         pokemon.types?.map(type => 
